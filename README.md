@@ -78,6 +78,7 @@ MODEL TRAINING PROCESS :
 
 
 
+
 FLASK WEB APP WORKFLOW :
 
 1. User uploads an image on the home page.
