@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHLESENSE - Classification Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ATHLESENSE</h1>
+        <p class="tagline">Your Results</p>
+    </header>
+
+    <!-- Result Display -->
+    <section class="result-container">
+        <div class="image-section">
+            <h2>Your Gear</h2>
+            <img src="{{ url_for('static', filename='uploaded_image.jpg') }}" alt="Uploaded Sports Equipment">
+        </div>
+        <div class="prediction-section">
+            <h2>Prediction</h2>
+            <div class="prediction-card">
+                <h3>{{ results.predicted_class }}</h3>
+                <p>Confidence: {{ results.confidence_score }}%</p>
+            </div>
+            <h2>Top-3 Predictions</h2>
+            <img src="{{ url_for('static', filename='top3_predictions.png') }}" alt="Top-3 Prediction Chart">
+        </div>
+    </section>
+
+    <!-- Back Button -->
+    <div class="back-container">
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ATHLESENSE</p>
+    </footer>
+</body>
+</html>
