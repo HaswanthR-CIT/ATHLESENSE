@@ -1,1 +1,1 @@
-{"predicted_class": "Table_Tennis_Ball", "confidence_score": 53.28, "top_3": [{"class": "Table_Tennis_Ball", "confidence": 53.28}, {"class": "Carrom_Board", "confidence": 18.73}, {"class": "Bow_and_Arrow_Archery", "confidence": 9.87}]}
+{"predicted_class": "Carrom_Board", "confidence_score": 57.67, "top_3": [{"class": "Carrom_Board", "confidence": 57.67}, {"class": "Carrom_Coins", "confidence": 42.32}, {"class": "Soccer_Ball", "confidence": 0.0}]}
